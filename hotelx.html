@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel X</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="hotelx.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./Images/1SkoSL-LogoMakr.png">
+</head>
+<body>
+    <header id="Home">
+        <div class="logo">
+            <div class="letter">Hotel </div>
+            <div class="letters"> X</div>
+        </div>
+        <div class="humburugr">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home" class="acrive">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>HotelX</h1>
+            <p>Best Hotel in our City </p>
+            <a class="about-btn" href="#about">About us</a>
+        </div>
+        
+    </header>
+    <script src="hotelx.js"></script>
+    <section class="about-sec" id="about">
+        <h1>About us and our Survices</h1>
+        <div class="about-section">
+            <p>The hotel offers a variety of rooms and suites, including standard rooms, deluxe rooms, executive suites, and family suites.
+                All rooms feature free Wi-Fi, air conditioning, flat-screen TVs, minibars, in-room coffee makers,
+                and 24-hour room service. 
+               The hotel is located in the heart of the city, 
+               close to all the major tourist attractions, restaurants, and shops. 
+               The hotel also has a rooftop bar, a spa, and a fitness center.
+                We are committed to providing our guests with a comfortable and enjoyable stay.</p>
+                <a class="service-btn" id="services">Our Services</a>
+        </div>
+        
+        <div class="kodfun-galeri">
+            <div style="background-image: url('./Images/200.jpg');"></div>
+            <div style="background-image: url('./Images/202.jpg');"></div>
+            <div style="background-image: url('./Images/203.jpg');"></div>
+            <div style="background-image: url('./Images/103.jpg');"></div>
+        </div>
+        
+
+    </section>
+    <section class="service-sec" id="services">
+        <h1> Our Survices</h1>
+    
+       <div class="manu-items">
+            <div class="manu-items-left">
+                <div class="manu-item">
+                    <img src="Images/202.jpg">
+                    <div>
+                        <h3> Registration </h3>
+                        <p> Providing reception and registration services </p>
+                    </div>
+                  </div>
+                  <div class="manu-item">
+                    <img src="Images/200.jpg">
+                    <div>
+                        <h3>Family Rooms </h3>
+                        <p> furnished rooms equipped with basic amenities </p>
+                    </div>
+                  </div>
+                  <div class="manu-item">
+                    <img src="Images/203.jpg">
+                    <div>
+                        <h3> Swimming pool </h3>
+                        <p> There is a swimming pool with international standards </p>
+                    </div>
+                  </div>
+                <div class="manu-item">
+                    <img src="Images/201.jpg">
+                    <div>
+                        <h3>Food service</h3>
+                        <p> Asian food , Algerian food</p>
+                    </div>
+                  </div>
+                  <div class="manu-item">
+                    <img src="Images/204.jpg">
+                    <div>
+                        <h3> Gym </h3>
+                        <p> There is a large Gym with trainers </p>
+                    </div>
+                  </div>
+                  <div class="manu-item">
+                    <img src="Images/205.jpg">
+                    <div>
+                        <h3> childcare </h3>
+                        <p> Providing childcare services </p>
+                    </div>
+                  </div>
+            </div>
+       </div>
+    </section>
+
+    <section class="contact-sec" id="contact">
+        <h1> Contact </h1>
+        <div class="social-icon">
+            <div class="insta">
+                <i class="fa-brands fa-instagram"></i>
+                <h2 id="insta-username">hotelx_23</h2>
+            </div>
+            <div class="face">
+                <i class="fa-brands fa-facebook"></i>
+                <h2 id="face-username">hoTelx_273</h2>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Images/1SkoSL-LogoMakr.png" alt="Company Logo">
+              <div class="text">HotelX</div>  
+            </div>
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <p class="footer-title">Copyrights @<span>Moncif Abdelilleh</span></p>
+        </footer>
+    <script>
+        // Function to copy text to clipboard
+        function copyToClipboard(text) {
+            const textarea = document.createElement("textarea");
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+        }
+    
+        // Get references to the username elements by their IDs
+        const instaUsernameElement = document.getElementById("insta-username");
+        const faceUsernameElement = document.getElementById("face-username");
+    
+        // Add click event listeners to the username elements
+        instaUsernameElement.addEventListener("click", function () {
+            // Copy the text inside the Instagram username element to the clipboard
+            const instaUsernameText = instaUsernameElement.textContent;
+            copyToClipboard(instaUsernameText);
+        });
+    
+        faceUsernameElement.addEventListener("click", function () {
+            // Copy the text inside the Facebook username element to the clipboard
+            const faceUsernameText = faceUsernameElement.textContent;
+            copyToClipboard(faceUsernameText);          
+        });
+    </script>
+    
+</body>
+</html>
+
